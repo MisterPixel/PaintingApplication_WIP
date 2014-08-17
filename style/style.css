@@ -4,7 +4,7 @@ html, body {
 	margin: 0;
 }
 
-
+/* undo button (top) */
 
 #clear {
 	padding-top: 6px;
@@ -23,9 +23,9 @@ html, body {
 	margin: 4px 0 0 0;
 }
 
-/* Tool Bar */
 
 
+/* Tool Bar (left) */
 
 #pencil div i.fa {
 	margin: 6px 0 6px 9px;
@@ -38,9 +38,6 @@ html, body {
 	text-decoration: none;
 	color: #f2f2f2;
 }
-
-
-
 
 #toolToggle {
 	width: 93px;
@@ -57,8 +54,7 @@ ul.tools {
 	height: 100%;
 	padding: 0px;
 	margin: 0;
-	z-index: 96;
-	
+	z-index: 96;	
 }
 
 ul.tools li {
@@ -75,7 +71,6 @@ li div {
 	float: left;
 	clear: right;
 	display: inline;
-
 }
 
 .toolThumb {
@@ -92,7 +87,6 @@ li div {
 	text-decoration: none;
 	color: #ffffff;
 	text-shadow: 0 2px 2px #000000;
-
 }
 
 .toolThumb:hover {
@@ -104,10 +98,12 @@ li div {
 	z-index: 97;
 }
 
-/* color bar */
+
+
+/* Color Bar (right) */
 
 #colorToggle {
-	width: 93px;
+	width: 91px;
 	height: 100%;
 	padding: 0px;
 	background-color: #f2f2f2;
@@ -118,6 +114,51 @@ li div {
 	z-index: 95;
 }
 
+li div.rightRows {
+	margin: 0 1px 0 0;
+	padding: 0;
+	float: right;
+	clear: left;
+	display: inline;
+}
+
+ul.colors {
+	width: 91px;
+	height: 216px;
+	padding: 0px;
+	margin: 0;
+	z-index: 96;
+}
+
+ul.colors li {
+	width: 91px;
+	height: 29px;
+	list-style: none;
+	margin: 1px 0 0 1px;
+	z-index: 96;
+}
+
+.Swatches {
+	margin: 0 1px 0 0;
+	background-color: #4c4c4c;
+	width: 29px;
+	height: 29px;
+	color: #4c4c4c;
+	z-index: 97;
+}
+
+.Swatches:hover {
+	margin: 0 1px 0 0;
+	background-color: #262626;
+	width: 29px;
+	height: 29px;
+	color: #4c4c4c;
+	z-index: 97;
+}
+
+
+
+/* link hover (currently undo) */
 
 a {
 	text-decoration: none;
@@ -132,6 +173,8 @@ a:hover {
 
 
 
+/* Canvas Styling */
+
 #canvasHolder {
 	/*border: 40px solid black; */
 	padding:0px 93px 0px 93px;
@@ -145,6 +188,5 @@ a:hover {
 	left: 93px; right: 93;
 	bottom: 0; top: 0;
 	cursor: crosshair;
-
 }
 
